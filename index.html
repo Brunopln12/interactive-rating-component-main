@@ -13,7 +13,7 @@
 
 </head>
 <body>
-  <main>
+  <main id="page1">
     <section id="star">
       <img src="./images/icon-star.svg" alt="start">
     </section>
@@ -27,26 +27,40 @@
       </p>
     </section>
     <section id="selection">
-      <input type="button" value="1" class="button">
-      <input type="button" value="2" class="button">
-      <input type="button" value="3" class="button">
-      <input type="button" value="4" class="button">
-      <input type="button" value="5" class="button">
+      <input type="button" value="1" class="button b1">
+      <input type="button" value="2" class="button b2">
+      <input type="button" value="3" class="button b3">
+      <input type="button" value="4" class="button b4">
+      <input type="button" value="5" class="button b5">
     </section>
     <section id="submit">
       <input type="submit" value="SUBMIT" class="submit">
     </section>
-  <!-- Rating state end -->
-  
-  <!-- Thank you state start -->
-  
-  <!-- You selected -->
-  <!-- Add rating here  out of 5
-  
-  Thank you!
-  
-  We appreciate you taking the time to give a rating. If you ever need more support,
-  don’t hesitate to get in touch!-->
   </main>
+  <main id="page2" style="display: none;">
+    <section>
+      <img src="./images/illustration-thank-you.svg" alt="Thank You">
+    </section>
+    <section>
+      <p>
+        You selected <p id="res">0</p> out of 5
+      </p>
+    </section>
+    <section id="paragraph">
+      <p>
+        Thank you state start
+      </p>
+    </section> 
+    <section>
+      <h1>Thank you!</h1>
+    </section>
+    <section>
+      <p>
+        We appreciate you taking the time to give a rating. If you ever need more support,
+        don’t hesitate to get in touch
+      </p>
+    </section> 
+  </main>
+  <script src="./Js/script.js"></script>
 </body>
 </html>
