@@ -19,6 +19,7 @@ b1.onclick = function click1() {
     enviar.style.backgroundColor = 'hsl(25, 97%, 53%)'
     var res = document.getElementById('res')
     res.innerHTML = '1'
+    enviar.disabled = false
 }
 b2.onclick = function click2() {
     b1.style.backgroundColor = 'rgb(54, 60, 69)'
@@ -34,6 +35,7 @@ b2.onclick = function click2() {
     enviar.style.backgroundColor = 'hsl(25, 97%, 53%)'
     var res = document.getElementById('res')
     res.innerHTML = '2'
+    enviar.disabled = false
 }
 b3.onclick = function click3() {
     b1.style.backgroundColor = 'rgb(54, 60, 69)'
@@ -49,6 +51,7 @@ b3.onclick = function click3() {
     enviar.style.backgroundColor = 'hsl(25, 97%, 53%)'
     var res = document.getElementById('res')
     res.innerHTML = '3'
+    enviar.disabled = false
 }
 b4.onclick = function click4() {
     b1.style.backgroundColor = 'rgb(54, 60, 69)'
@@ -64,6 +67,7 @@ b4.onclick = function click4() {
     enviar.style.backgroundColor = 'hsl(25, 97%, 53%)'
     var res = document.getElementById('res')
     res.innerHTML = '4'
+    enviar.disabled = false
 }
 b5.onclick = function click5() {
     b1.style.backgroundColor = 'rgb(54, 60, 69)'
@@ -79,10 +83,11 @@ b5.onclick = function click5() {
     enviar.style.backgroundColor = 'hsl(25, 97%, 53%)'
     var res = document.getElementById('res')
     res.innerHTML = '5'
+    enviar.disabled = false
 }
 enviar.onclick = function() {
     var pag1 = document.getElementById('page1')
     var pag2 = document.getElementById('page2')
     pag1.style.display = 'none'
-    pag2.style.display = 'block'
+    pag2.style.display = 'inline'
 }
