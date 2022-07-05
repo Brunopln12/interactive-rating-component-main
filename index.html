@@ -2,56 +2,72 @@
 <html lang="en">
 <head>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
+  
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Interactive rating component</title>
-  <link rel="stylesheet" href="./css/style.css">
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/colors.css">
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
 
 </head>
 <body>
-  <main id="page1">
-    <section id="star">
+  <main class="container-1 border">
+
+    <div class="container-1__img">
       <img src="./images/icon-star.svg" alt="start">
-    </section>
-    <section id="title">
+    </div>
+
+    <header class="container-1__title">
       <h1>How did we do?</h1>
-    </section>
-    <section id="paragraph">
+    </header>
+
+    <section class="container-1__text">
       <p>
         Please let us know how we did with your support request. All feedback is appreciated 
         to help us improve our offering!
       </p>
     </section>
-    <section id="selection">
-      <input type="button" value="1" class="button b1">
-      <input type="button" value="2" class="button b2">
-      <input type="button" value="3" class="button b3">
-      <input type="button" value="4" class="button b4">
-      <input type="button" value="5" class="button b5">
+
+    <section class="container-1__rating">
+      <input type="button" value="1" class="container-1__rating--button">
+      <input type="button" value="2" class="container-1__rating--button">
+      <input type="button" value="3" class="container-1__rating--button">
+      <input type="button" value="4" class="container-1__rating--button">
+      <input type="button" value="5" class="container-1__rating--button">
     </section>
-    <section id="submit">
-      <input type="submit" value="SUBMIT" class="submit" disabled>
+
+    <section class="container-1__submit">
+      <input type="submit" value="SUBMIT" class="container-1__submit--button" disabled>
     </section>
+
   </main>
-  <main id="page2" style="display: none;">
-    <section id="imagem2">
+
+  <main class="container-2 border">
+
+    <div class="container-2__img">
       <img src="./images/illustration-thank-you.svg" alt="Thank You">
+    </div>
+
+    <section class="container-2__result">
+      <pre> You selected </pre><p id="result">0</p> <pre> out of 5</pre> 
     </section>
-    <section id="text--rating">
-      <pre> You selected </pre><p id="res">0</p> <pre> out of 5</pre> 
-    </section>
-    <section id="title2">
+
+    <section class="container-2__title">
       <h1>Thank you!</h1>
     </section>
-    <section id="paragraph2">
+    
+    <section class="container-2__text">
       <p>
         We appreciate you taking the time to give a rating. If you ever need more support, don’t hesitate to get in touch!
       </p>
-    </section> 
+    </section>
+
   </main>
   <script src="./Js/script.js"></script>
 </body>
