@@ -17,7 +17,7 @@
 
 </head>
 <body>
-  <main class="container-1 border">
+  <main class="container-1" style="display: block;">
 
     <div class="container-1__img">
       <img src="./images/icon-star.svg" alt="start">
@@ -35,27 +35,27 @@
     </section>
 
     <section class="container-1__rating">
-      <input type="button" value="1" class="container-1__rating--button">
-      <input type="button" value="2" class="container-1__rating--button">
-      <input type="button" value="3" class="container-1__rating--button">
-      <input type="button" value="4" class="container-1__rating--button">
-      <input type="button" value="5" class="container-1__rating--button">
+      <input type="button" value="1" class="container-1__rating--button" onclick="sel(1)">
+      <input type="button" value="2" class="container-1__rating--button" onclick="sel(2)">
+      <input type="button" value="3" class="container-1__rating--button" onclick="sel(3)">
+      <input type="button" value="4" class="container-1__rating--button" onclick="sel(4)">
+      <input type="button" value="5" class="container-1__rating--button" onclick="sel(5)">
     </section>
 
     <section class="container-1__submit">
-      <input type="submit" value="SUBMIT" class="container-1__submit--button" disabled>
+      <input type="submit" value="SUBMIT" class="container-1__submit--button" disabled onclick="mudar()">
     </section>
 
   </main>
 
-  <main class="container-2 border">
+  <main class="container-2" style="display: none;">
 
     <div class="container-2__img">
       <img src="./images/illustration-thank-you.svg" alt="Thank You">
     </div>
 
     <section class="container-2__result">
-      <pre> You selected </pre><p id="result">0</p> <pre> out of 5</pre> 
+      <div id="result"></div>
     </section>
 
     <section class="container-2__title">
@@ -69,6 +69,6 @@
     </section>
 
   </main>
-  <script src="./Js/script.js"></script>
+  <script src="Js/script.js"></script>
 </body>
 </html>
